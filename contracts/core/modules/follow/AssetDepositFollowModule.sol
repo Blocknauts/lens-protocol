@@ -91,4 +91,8 @@ contract AssetDepositFollowModule is IFollowModule, FollowValidatorFollowModuleB
     }
   }
 
+  function getProfileData(uint256 profileId) external view returns (ProfileData memory) {
+        return _dataByProfile[profileId];
+    }
+
 }
